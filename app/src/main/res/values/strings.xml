@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AsynctaskImagedownloadparallel</string>
+    <string name="textview_one">Loading image 1</string>
+    <string name="textview_two">Loading image 2</string>
+    <string name="textview_three">Loading image 3</string>
+    <string name="textview_four">Loading image 4</string>
+    <string-array name="url_array">
+        <item>http://www.mouserunner.com/images/Apple.png</item>
+        <item>http://click-namibia.com/wp-content/themes/click-namibia/images/giraffe.png</item>
+        <item>http://images.wikia.com/tinyzoo/images/5/5d/Birthday_cake.png</item>
+        <item>http://www.pngall.com/wp-content/uploads/2016/05/Lemon-PNG-Image.png</item>
+    </string-array>
+</resources>

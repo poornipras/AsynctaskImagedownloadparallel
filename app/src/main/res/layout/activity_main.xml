@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.pooja.asynctaskimagedownloadparallel.MainActivity">
+
+    <Button
+        android:text="Start Download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:id="@+id/button" />
+
+    <TextView
+        android:text="@string/textview_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView_loading1"
+        android:visibility="visible"/>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_loading1"
+        android:id="@+id/progressBar_image1"
+        android:indeterminate="false"
+        android:max="100"
+        android:visibility="visible"/>
+    <TextView
+        android:text="@string/textview_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_loading2"
+        android:visibility="visible"
+        android:layout_below="@+id/progressBar_image1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar_image3"
+        android:visibility="visible"
+        android:layout_below="@+id/textView_loading3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar_image2"
+        android:visibility="visible"
+        android:layout_below="@+id/textView_loading2"
+        android:layout_alignRight="@+id/progressBar_image1"
+        android:layout_alignEnd="@+id/progressBar_image1" />
+
+    <TextView
+        android:text="@string/textview_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_loading3"
+        android:layout_below="@+id/progressBar_image2"
+        android:layout_alignParentLeft="true"
+        android:visibility="visible"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/textview_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_loading4"
+        android:layout_below="@+id/progressBar_image3"
+        android:layout_alignParentLeft="true"
+        android:visibility="visible"
+        android:layout_alignParentStart="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar_image4"
+        android:layout_below="@+id/textView_loading4"
+        android:layout_alignParentLeft="true"
+        android:visibility="visible"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
